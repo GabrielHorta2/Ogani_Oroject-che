@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    border: solid black 1px;
+    
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+.top-header {
+    display: grid;
+    grid-template-columns: 2fr 1.7fr 1fr;
+    align-items: center;
+    padding: 10px 20px;
+    background: #f5f5f5;
+  
+}
+
+.Info-contato {
+    display: flex;
+    align-items: center;
+}
+
+.Info-contato a, .Info-contato span {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+#email {
+    display: flex;
+    align-items: center;
+    height: 14px;
+    width: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    
+    gap: 20px;
+}
+
+
+
+.social-icons svg{
+    width: 20px;
+    height: 20px;
+}
+
+.language-login {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 8px;
+}
+
+.language img {
+    width: 25px;
+    height: 32px;
+    margin-right: 5px;
+}
+
+.language span {
+    font-size: 14px;
+    color: #333;
+}
+
+.login {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.3fr 1.3fr 1.4fr 1fr;
+    grid-template-rows: 80px 80px 431px 271px;
+}
+
+#main div {
+    border: solid 1px;
+}
+
+#logo {
+    grid-column: 2;
+}
+
+#nav {
+    grid-column: 3 / 6;
+}
+
+#menu {
+    grid-column: 2;
+    grid-row: 2 / 4;
+}
+
+#busca {
+    grid-column: 3 / 6;
+    grid-row: 2;
+}
+
+#banner {
+    grid-column: 3 / 6;
+    grid-row: 3;
+    background-image: url(imagenzinhas/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#prod1 {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+#prod2 {
+    grid-row: 4;
+    grid-column: 3;
+}
+
+#prod3 {
+    grid-row: 4;
+    grid-column: 4;
+}
+
+#prod4 {
+    grid-row: 4;
+    grid-column: 5;
+}
+
+#nav-link {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+}
+
+#drop-menu {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    width: 200px;
+    opacity: 0;
+    z-index: -99;
+    top: 50px;
+    transition: 0.5s;
+    background: #222222;
+    color: white;
+}
+
+#nav-drop {
+   position: relative;
+    
+}
+#navIcon{
+    display: flex;
+}
+
+#nav-check:checked~#drop-menu{
+    opacity: 1;
+    top: 18px;       
+    z-index: 99;
+}
+#nav-check{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.departments-menu {
+    width: 100%;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-toggle-label {
+    background-color: #8BC34A;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ddd;
+    border-top: none;
+    display: block;
+}
+
+.menu-list li {
+    border-bottom: 1px solid #ddd;
+}
+
+.menu-list li:last-child {
+    border-bottom: none;
+}
+
+.menu-list a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-list a:hover {
+    background-color: #f0f0f0;
+}
+
+#menu-toggle:checked ~ .menu-list {
+    display: none;
+}
+
+#iCbarr {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#iCbarr svg {
+    width: 16px;
+    height: 16px;
+}
+
+#featuread{
+    font-family: "Cairo", sans-serif;
+    font-size: 36px;
+    color: #1c1c1c;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+#verdoProd{
+   
+    position: absolute;
+    margin-top: -9px;
+   margin-left: 638px;
+    height: 4px;
+    width: 80px;
+    background: #7fad39;
+}
+#ListFetu{
+    font-family: "Cairo", sans-serif;
+    text-align: center;
+    justify-content: center;
+   list-style: none;
+   display: flex;
+   gap: 27px;
+}
+
+
+/* Estilo para o grid */
+#produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 275px); /* 4 colunas de 275px cada */
+    grid-gap: 25px;
+    grid-row-gap: 70px;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.produto img {
+    width: 100%;
+    display: block;
+}
+
+.Dindin {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    
+    
+}
+
+.txtProds {
+    font-size: 1rem;
+}
+
+/* Estilo para os banners */
+.banno {
+    grid-column: span 2; /* Ocupa 2 colunas */
+    margin: 0 auto;
+}
+
+.banno img {
+    width: 100%;
+    display: block;
+}
+#extras {
+    display: grid;
+    grid-template-columns: repeat(3, 376px); /* 3 colunas de exatamente 275px cada */
+    grid-gap: 25px;
+    justify-content: center;
+    margin-top: 25px;
+   
+}
+
+.extra-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.extra-section h3 {
+    font-size: 1.5rem;
+   
+    text-align: start;
+
+    font-weight: 700;
+    color: #1c1c1c;
+    font-family: "Cairo", sans-serif;
+
+}
+
+.extra-produto {
+    display: flex;
+    align-items: start;
+
+    
+}
+
+.extra-produto img {
+    height: 110px;
+    width: 110px;
+    margin-right: 10px;
+}
+
+.extra-produto p {
+    
+    color: #252525;
+    font-family: "Cairo", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+   margin-left: 18px;
+}
+.extra-produto .Dindin{
+    position: absolute;
+    margin-left: 138px;
+    margin-top: 38px;
+}
+h2{
+    font-size: 36px;
+    font-family: "Cairo", sans-serif;
+    color: black;
+    font-weight: 800;
+    position: relative;
+    text-align: center;
+}
+
+
+#QaseNfim #verdoProd{
+margin-left: 151px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+   
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.footer img{
+    height: 50px;
+    width: 100px;
+}
+
+
+
+
+.header {
+    font-size: 1.25em;
+    margin: 10px 0;
+    color: #333;
+    text-align: start;
+}
+
+.paragraph {
+    font-size: 0.9em;
+    color: #666;
+    width: 310px;
+}
+.content svg{
+    height: 20px;
+    width: 19px;
+}
+.date{
+    color: #b2b2b2;
+}
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #f5f5f5;
+    padding: 60px;
+}
+.footer-section {
+    margin: 10px;
+}
+.footer-section h3 {
+   
+    color: #1c1c1c;
+    font-weight: 700;
+    font-family: "Cairo", sans-serif;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+.contact-info, .newsletter, .payment-methods {
+    display: flex;
+    flex-direction: column;
+}
+.useful-links {
+    display: flex;
+    flex-direction: column;
+}
+.useful-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.useful-links ul li {
+    width: calc(50% - 10px);
+}
+.newsletter-input {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.newsletter button {
+    padding: 10px;
+    background-color: #8bc34a;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.newsletter button:hover {
+    background-color: #7cb342;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #333;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
