@@ -1,8 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    border: solid black 1px;
-    
+  
 }
 ul, ol {
     padding: 0;
@@ -21,6 +20,7 @@ ul, ol {
 .Info-contato {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .Info-contato a, .Info-contato span {
@@ -57,17 +57,32 @@ ul, ol {
     align-items: center;
 }
 
+
 .language {
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-right:10px;
     gap: 8px;
+    margin-left: 15px;
+}
+.ingles{
+    display: flex;
+   margin-left: 19px;
+   gap: 18px;
+   align-items: center;
+}
+.ingles svg {
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    gap: 10px;
 }
 
 .language img {
-    width: 25px;
-    height: 32px;
+    width: 27px;
+    height: 14px;
     margin-right: 5px;
+   
 }
 
 .language span {
@@ -87,16 +102,26 @@ ul, ol {
     grid-template-rows: 80px 80px 431px 271px;
 }
 
-#main div {
-    border: solid 1px;
-}
+
 
 #logo {
     grid-column: 2;
+    margin-top: 10px;
 }
 
 #nav {
     grid-column: 3 / 6;
+  
+}
+#nav a{
+    text-decoration: none; 
+            color: inherit; 
+}
+#nav ul{
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 14px;
 }
 
 #menu {
@@ -107,6 +132,133 @@ ul, ol {
 #busca {
     grid-column: 3 / 6;
     grid-row: 2;
+    display: flex;
+    align-items: center;
+    gap: 43px;
+  
+}
+
+#search-container {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+   background-color: white;
+    overflow: hidden;
+}
+
+#all-categories {
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #1c1c1c;
+    font-weight: 900;
+    font-family: "Cairo", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+}
+
+#all-categories::after {
+    content: '\25BC'; /* Unicode character for the down arrow */
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+#all-categories::before {
+    content: '';
+    width: 1px;
+    height: 50%;
+    border: none;
+    background-color: #ddd;
+    position: absolute;
+    right: 5px;
+    top: 25%;
+}
+
+#search-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    color: #b2b2b2;
+}
+
+#search-button {
+    background-color: #7fad39;
+    color: white;
+    font-weight: 900;
+    font-family: "Cairo", sans-serif;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#numero1 {
+    display: flex;
+    align-items: center; 
+}
+
+#numero1 img {
+    max-width: 100%; 
+    margin-left: 10px;
+    height: auto;
+    align-items: en;
+}
+
+.h5-container {
+    margin-left: 10px; 
+    margin-bottom: -10px;
+    color: #1c1c1c;
+    font-weight: 900;
+}
+#tel_cel{
+    color: #1c1c1c;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: "Cairo", sans-serif;
+}
+.h5-container h5 {
+
+    margin: 8px; 
+}
+#support{
+    font-size: 14px;
+    color: #6f6f6f;
+}
+#cent1{
+  
+
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-family: "Cairo", sans-serif;
+    
+}
+#menu-sacola{
+    display: flex;
+    text-align: center;
+    gap: 18px;
+ 
+}
+#item{
+   margin-left: 3px;
+   color: #6f6f6f;
+   
+   
+}
+#cent1{
+    margin-left: -18.6px;
+    color: #252525;
+    font-weight: 900;
+    letter-spacing: 2px;
+    
+}
+#item, #cent1{
+    font-size: 14px;
+    align-self: center;
+
 }
 
 #banner {
@@ -116,11 +268,54 @@ ul, ol {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 50px;
+    display: block;
 }
+
+#ban_text1{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #7fad39;
+    font-family: "Cairo", sans-serif;
+}
+#Vegetable{
+    font-size: 46px;
+    color: #252525;
+    line-height: 52px;
+    font-weight: 900;
+    margin: 10px 0;
+    font-family: "Cairo", sans-serif;
+   width: 300px;
+}
+#Vegetable2{
+    margin-bottom: 35px;
+    font-size: 16px;
+    font-family: "Cairo", sans-serif;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0 15px 0;
+}
+#buttonV1{
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 28px 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 900;
+    background: #7fad39;
+    letter-spacing: 2px;
+    font-family: "Cairo", sans-serif;
+    margin-top: 8px;
+}
+
 
 #prod1 {
     grid-row: 4;
     grid-column: 2;
+    display: block;
 }
 
 #prod2 {
@@ -136,6 +331,21 @@ ul, ol {
 #prod4 {
     grid-row: 4;
     grid-column: 5;
+}
+.caix_prod{
+    font-size: 18px;
+    color: #1c1c1c;
+    font-weight: 900;
+    letter-spacing: 2px;
+    background: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Cairo", sans-serif;
+    height: 38px;
+    width: 213px;
+    position: absolute;
+    margin-top: -54px;
+    margin-left:30px;
 }
 
 #nav-link {
@@ -164,9 +374,6 @@ ul, ol {
    position: relative;
     
 }
-#navIcon{
-    display: flex;
-}
 
 #nav-check:checked~#drop-menu{
     opacity: 1;
@@ -190,15 +397,15 @@ ul, ol {
 }
 
 .menu-toggle-label {
-    background-color: #8BC34A;
-    color: white;
+    background-color: #7FAD39;
+  
     border: none;
-    padding: 10px;
+    text-align: center;
     width: 100%;
-    text-align: left;
+    
     font-size: 16px;
     cursor: pointer;
-    border-radius: 4px;
+    
     display: block;
 }
 
@@ -206,14 +413,11 @@ ul, ol {
     list-style: none;
     padding: 0;
     margin: 0;
-    border: 1px solid #ddd;
     border-top: none;
     display: block;
 }
 
-.menu-list li {
-    border-bottom: 1px solid #ddd;
-}
+
 
 .menu-list li:last-child {
     border-bottom: none;
@@ -233,30 +437,40 @@ ul, ol {
 #menu-toggle:checked ~ .menu-list {
     display: none;
 }
+#Aldeptmen{
+    width: 180px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #ffffff;
+    font-family: "Cairo", sans-serif;
+    margin-top: 6px;
+}
 
 #iCbarr {
     display: flex;
-    align-items: center;
+  text-align: center;
+    justify-content: center;
     gap: 8px;
 }
 
 #iCbarr svg {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 45px;
+    
 }
 
 #featuread{
     font-family: "Cairo", sans-serif;
     font-size: 36px;
     color: #1c1c1c;
-    font-weight: 700;
+    font-weight: 900;
     position: relative;
     text-align: center;
 }
 #verdoProd{
    
     position: absolute;
-    margin-top: -9px;
+    margin-top: -24px;
    margin-left: 638px;
     height: 4px;
     width: 80px;
@@ -272,14 +486,15 @@ ul, ol {
 }
 
 
-/* Estilo para o grid */
+
 #produtos {
     display: grid;
-    grid-template-columns: repeat(4, 275px); /* 4 colunas de 275px cada */
+    grid-template-columns: repeat(4, 275px); 
     grid-gap: 25px;
     grid-row-gap: 70px;
     text-align: center;
     justify-content: center;
+align-items: center;
     
 }
 
@@ -289,20 +504,21 @@ ul, ol {
 }
 
 .Dindin {
-    font-weight: 700;
+    font-weight: 900;
     font-size: 18px;
     text-align: center;
-    
+    font-family: "Cairo", sans-serif;
     
 }
 
 .txtProds {
     font-size: 1rem;
+    
 }
 
-/* Estilo para os banners */
+
 .banno {
-    grid-column: span 2; /* Ocupa 2 colunas */
+    grid-column: span 2; 
     margin: 0 auto;
 }
 
@@ -312,7 +528,7 @@ ul, ol {
 }
 #extras {
     display: grid;
-    grid-template-columns: repeat(3, 376px); /* 3 colunas de exatamente 275px cada */
+    grid-template-columns: repeat(3, 376px); 
     grid-gap: 25px;
     justify-content: center;
     margin-top: 25px;
@@ -330,10 +546,16 @@ ul, ol {
    
     text-align: start;
 
-    font-weight: 700;
+    font-weight: 900;
     color: #1c1c1c;
     font-family: "Cairo", sans-serif;
-
+}
+#extr_tile{
+    display: flex;
+    justify-content: space-between;
+}
+#extr_tile{
+    align-self: flex-end;
 }
 
 .extra-produto {
@@ -354,26 +576,33 @@ ul, ol {
     color: #252525;
     font-family: "Cairo", sans-serif;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 900;
    margin-left: 18px;
 }
 .extra-produto .Dindin{
     position: absolute;
     margin-left: 138px;
     margin-top: 38px;
+    font-weight: 900;
+    font-family: "Cairo", sans-serif;
 }
 h2{
     font-size: 36px;
     font-family: "Cairo", sans-serif;
-    color: black;
-    font-weight: 800;
+    color: #1c1c1c;
+    font-weight: 900;
     position: relative;
     text-align: center;
 }
 
 
-#QaseNfim #verdoProd{
+#verdoProd2{
 margin-left: 151px;
+position: absolute;
+    margin-top: -9px;
+    height: 4px;
+    width: 80px;
+    background: #7fad39;
 }
 
 
@@ -414,6 +643,8 @@ margin-left: 151px;
     margin: 10px 0;
     color: #333;
     text-align: start;
+    font-family: "Cairo", sans-serif;
+    font-weight: 900;
 }
 
 .paragraph {
@@ -431,7 +662,7 @@ margin-left: 151px;
 .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #f5f5f5;
+    background: #F3F6FA;
     padding: 60px;
 }
 .footer-section {
@@ -440,69 +671,78 @@ margin-left: 151px;
 .footer-section h3 {
    
     color: #1c1c1c;
-    font-weight: 700;
+    font-weight: 900;
     font-family: "Cairo", sans-serif;
 }
 .footer-section ul {
     list-style: none;
     padding: 0;
 }
-.footer-section ul li {
-    margin-bottom: 5px;
+
+.payment-methods{
+    grid-column: 3/3;
+  text-align: center;
+  margin-left: 100px;
+  
 }
-.contact-info, .newsletter, .payment-methods {
+
+.payment-methods img {
+    height: 23px;
+    width: 286px;
+    
+    
+}
+#tile_listF{
+    font-size: 18px; 
+  font-weight: bold;
+  margin-bottom: 10px; /
+}
+#listsFim{
     display: flex;
-    flex-direction: column;
+
 }
-.useful-links {
+#Lis_f_sepa{
     display: flex;
-    flex-direction: column;
+    gap: 40px;
 }
-.useful-links ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.finalmente{
+  
+    list-style-type: none; 
+    
+  
 }
-.useful-links ul li {
-    width: calc(50% - 10px);
+
+.lis_final li {
+    margin-bottom: 10px;
+    
 }
 .newsletter-input {
     display: flex;
-    gap: 10px;
+    
 }
 
 .newsletter input[type="email"] {
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     flex: 1;
 }
 
 .newsletter button {
-    padding: 10px;
-    background-color: #8bc34a;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 13px 30px 12px;
+    background: #7fad39;
     border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
+    
 }
 
 .newsletter button:hover {
     background-color: #7cb342;
 }
 
-.social-media {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.social-media a {
-    text-decoration: none;
-    color: #333;
-}
-
-.social-media img {
-    width: 30px;
-    height: 30px;
+.social-media img{
+    width: 200px;
+    height: 45px;
 }
